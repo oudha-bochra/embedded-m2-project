@@ -1,4 +1,5 @@
-# Statistical Analysis Project
+# Statistical Analysis Project 
+Course project for Coursera Embedded Systems Essentials
 
 This project implements basic statistical functions in C for an array of data.  
 It includes calculations of minimum, maximum, mean, and median values, along with functions to print and sort the array.
