@@ -1,0 +1,9 @@
+# Ignore compiled files
+stats
+*.o
+*.out
+
+# Ignore temporary files
+*.save
+*~
+
