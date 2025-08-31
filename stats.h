@@ -1,4 +1,10 @@
-    
+/**
+ * @brief Find the maximum value in an array
+ *
+ * @param arr The input array
+ * @param length The number of elements in the array
+ * @return The maximum integer in the array
+ */    
 
 /*******************************************************
  * stats.h
