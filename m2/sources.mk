@@ -1,11 +1,21 @@
-# sources.mk - list of sources and includes for M2
+#******************************************************************************
+# Copyright (C) 2017 by Alex Fosdick - University of Colorado
+#
+# Redistribution, modification or use of this software in source or binary
+# forms is permitted as long as the files maintain this copyright. Users are 
+# permitted to modify this and use it to learn about the field# software. Alex Fosdick and the University of Colorado are not liable for an# misuse of this material. 
+#
+#*****************************************************************************
+# Add your Source files to this variable
+SOURCES = \
+src/main.c \
+src/memory.c \
+src/interrupts_msp432p401r_gcc.c \
+src/startup_msp432p401r_gcc.c \
+src/system_msp432p401r.c
 
-# Files to compile for HOST build (only safe files)
-SOURCES_HOST = src/main.c src/memory.c
+# Add your include paths to this variable
+INCLUDES = -Iinclude
 
-# Files to compile for MSP432 build (includes platform-specific files)
-SOURCES_MSP432 = src/main.c src/memory.c src/interrupts_msp432p401r_gcc.c \
-                 src/startup_msp432p401r_gcc.c src/system_msp432p401r.c
 
-# Include paths (adjust if your include layout differs)
-INCLUDES = -Iinclude -Iinclude/common -Iinclude/msp432 -Iinclude/CMSIS
+
